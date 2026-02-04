@@ -63,17 +63,17 @@ This project demonstrates how Exploratory Data Analysis can be used to extract a
 
 ## Author
 
-Akisha Bhujel
-Github - https://github.com/akisavujel
-kaggle - https://www.kaggle.com/akisavujel
+- Akisha Bhujel
+- Github - https://github.com/akisavujel
+- kaggle - https://www.kaggle.com/akisavujel
 
 ## Tags
 
-#DataAnalysis
-#ExploratoryDataAnalysis
-#Python
-#Pandas
-#Matplotlib
-#Seaborn
-#InsuranceAnalytics
-#DataVisualization
+- #DataAnalysis
+- #ExploratoryDataAnalysis
+- #Python
+- #Pandas
+- #Matplotlib
+- #Seaborn
+- #InsuranceAnalytics
+- #DataVisualization
