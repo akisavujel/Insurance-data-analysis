@@ -66,6 +66,7 @@ This project demonstrates how Exploratory Data Analysis can be used to extract a
 - Akisha Bhujel
 - Github - https://github.com/akisavujel
 - kaggle - https://www.kaggle.com/akisavujel
+- Linked in - https://www.linkedin.com/in/akisa-vujel-5437843a2/
 
 ## Tags
 
