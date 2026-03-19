@@ -1,80 +1,144 @@
-# Insurance Data Analysis 
+<div align="center">
 
-## Project Overview
+# 🏥 Insurance Data Analysis
 
-This project performs Exploratory Data Analysis (EDA) on an insurance dataset to understand customer demographics, policy preferences, and premium behavior. The analysis focuses on discovering patterns and insights using data visualization and statistical techniques, without applying machine learning models.
+<img src="https://fundvizer.com/wp-content/uploads/2025/02/WhatsApp-Image-2025-02-26-at-11.36.48.jpeg" width="500,height = 1000" style="border-radius:10px;"/>
 
-## Objectives
+### 📊 Exploratory Data Analysis — Customer Demographics, Policy Preferences & Premium Behavior
 
-- Analyze customer distribution across city and region codes
-- Identify the most common insurance and policy types
-- Study the relationship between age range, policy duration, and premium amount
-- Understand how accommodation type affects spouse and policy holding behavior
-- Generate meaningful business insights using visualizations
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org)
+[![Seaborn](https://img.shields.io/badge/Seaborn-4c72b0?style=for-the-badge&logo=python&logoColor=white)](https://seaborn.pydata.org)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20beff?style=for-the-badge&logo=kaggle&logoColor=white)](https://kaggle.com)
 
-## Tools and Technologies
+</div>
 
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
-- kaggle
+---
 
-## Dataset Description
+## 📌 Overview
 
-The dataset contains customer-level insurance information used to analyze demographic patterns, policy preferences, and premium behavior. Each row represents an individual customer record with the following features:
+A comprehensive **Exploratory Data Analysis** project on a health insurance dataset. The goal is to uncover patterns in customer demographics, policy behavior, and premium distribution through rigorous data cleaning and visualization — without applying machine learning models.
 
-- ID: Unique identifier for each customer
-- City_Code: Encoded city identifier where the customer resides
-- Region_Code: Encoded regional identifier
-- Accomodation_Type: Indicates whether the customer lives in an owned or rented accommodation
-- Reco_Insurance_Type: Recommended insurance type (Individual or Joint)
-- Upper_Age: Upper age limit of the insured individual(s)
-- Lower_Age: Lower age limit of the insured individual(s)
-- Is_Spouse: Indicates whether the policy includes a spouse
-- Health Indicator: Categorical indicator representing the customer’s health condition
-- Holding_Policy_Duration: Duration (in years) for which the policy has been held
-- Holding_Policy_Type: Type/category of the policy held
-- Reco_Policy_Cat: Recommended policy category
-- Reco_Policy_Premium: Recommended insurance premium amount
-- Response: Target variable indicating whether the customer accepted the recommended policy
+---
 
-## Analysis Performed
+## 🎯 Objectives
+```
+01  Analyze customer distribution across city and region codes
+02  Identify the most common insurance and policy types
+03  Study the relationship between age range, policy duration, and premium
+04  Understand how accommodation type affects spouse and policy behavior
+05  Generate meaningful business insights using visualizations
+```
 
-- Data cleaning and preprocessing
-- GroupBy analysis to calculate average premiums
-- Univariate and bivariate analysis
-- Count plots for categorical variables
-- Line plots for policy duration vs premium
-- Density plots and distribution analysis
+---
 
-## Key Insights
+## 📁 Project Structure
+```
+Insurance-Policy-Analysis/
+│
+├── notebook.ipynb          # Main analysis notebook
+└── README.md               # Project documentation
 
-- A small number of city codes account for the majority of customers
-- Individual insurance policies are significantly more common than joint policies
-- Average policy premiums vary by region and policy duration
-- Renters slightly outnumber homeowners, but homeowners are more likely to have spouses
-- Customer activity shows a long-tail distribution across cities
+```
 
-## Conclusion
+---
 
-This project demonstrates how Exploratory Data Analysis can be used to extract actionable insights from insurance data. The visualizations and statistical summaries provide a clear understanding of customer demographics, policy trends, and premium behavior, making the analysis valuable for business and decision-making purposes.
+## 📂 Dataset
 
-## Author
+| Column | Type | Description |
+|--------|------|-------------|
+| `ID` | int | Unique customer identifier |
+| `City_Code` | str | Encoded city identifier |
+| `Region_Code` | str | Encoded regional identifier |
+| `Accomodation_Type` | str | Owned or Rented |
+| `Reco_Insurance_Type` | str | Individual or Joint |
+| `Upper_Age` | int | Upper age limit of insured |
+| `Lower_Age` | int | Lower age limit of insured |
+| `Is_Spouse` | bool | Policy includes spouse |
+| `Health Indicator` | str | Customer health category |
+| `Holding_Policy_Duration` | float | Years policy has been held |
+| `Holding_Policy_Type` | str | Category of policy held |
+| `Reco_Policy_Cat` | str | Recommended policy category |
+| `Reco_Policy_Premium` | float | Recommended premium amount |
+| `Response` | int | Target — accepted policy or not |
 
-- Akisha Bhujel
-- Github - https://github.com/akisavujel
-- kaggle - https://www.kaggle.com/akisavujel
-- Linked in - https://www.linkedin.com/in/akisa-vujel-5437843a2/
+---
 
-## Tags
+## 🔄 Analysis Pipeline
+```
+📥 Raw Data
+   │
+   ▼
+🧹 Data Cleaning ──── Handle missing values, fix data types, remove outliers
+   │
+   ▼
+🔍 Exploration ──────  Summary statistics, distributions, value counts
+   │
+   ▼
+📊 Visualization ────  Bar, line, count, density, scatter, box plots
+   │
+   ▼
+💡 Insights ─────────  Business conclusions and pattern discovery
+```
 
-- #DataAnalysis
-- #ExploratoryDataAnalysis
-- #Python
-- #Pandas
-- #Matplotlib
-- #Seaborn
-- #InsuranceAnalytics
-- #DataVisualization
+---
+
+## 💡 Key Insights
+
+| # | Insight |
+|---|---------|
+| 01 | 🏙️ **City concentration** — C1 and C2 alone account for ~1,600 customers each, vastly outperforming all other cities |
+| 02 | 👤 **Insurance preference** — Individual plans outnumber Joint plans at a 4:1 ratio |
+| 03 | 💰 **Premium range** — Top 10 regions maintain average premiums between ₹34,000 and ₹40,000 |
+| 04 | 🏠 **Accommodation & spouse** — Homeowners are 2x more likely to have a spouse than renters |
+| 05 | 📉 **Long tail effect** — Most city codes (C30–C36) have fewer than 50 customers |
+
+---
+
+## 📈 Visualizations Used
+
+| Plot Type | Purpose |
+|-----------|---------|
+| 📦 Box Plot | Outlier detection in numerical columns |
+| 📊 Histogram | Distribution of budget and premium |
+| 🔢 Count Plot | Categorical variable frequencies |
+| 📉 Bar Plot | Regional and city-level comparisons |
+| 📈 Line Plot | Policy duration vs premium trend |
+| 🌊 KDE Plot | Density of recommended policy category |
+| 🔵 Scatter Plot | Age range and premium relationships |
+
+---
+
+## ✅ Conclusion
+
+This project demonstrates how **Exploratory Data Analysis** extracts actionable insights from raw insurance data. The cleaning pipeline and visual summaries provide a clear picture of customer demographics, policy trends, and premium behavior — forming a strong foundation for future predictive modeling.
+
+---
+
+## 👤 Author
+
+<div align="center">
+
+**Akisha Bhujel** — Data Analyst
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/akisavujel)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20beff?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/akisavujel)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akishabhujel/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=firefox&logoColor=white)](https://akisavujel.github.io/Portfolio/)
+[![Hashnode](https://img.shields.io/badge/Hashnode-2962FF?style=for-the-badge&logo=hashnode&logoColor=white)](https://hashnode.com/@akisavujel)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/u/akishabhujel/)
+
+</div>
+
+---
+
+<div align="center">
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnB0bnRicTMzd3NjYnpxamcyd2ljZjVwOHM4ZnEyMW5wNTAweW90MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/69FiPmqxkmoy3KJUAw/giphy.gif" width="300"/>
+</div>
+
+---
+
+<div align="center">
+<sub>⭐ If this project helped you, consider giving it a star!</sub>
+</div>
